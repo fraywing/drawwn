@@ -5,12 +5,12 @@ drawwn
 Super easy javascript canvas drawing UI and tool with build with oCanvas, color picker, and easy slider.
 
 TO USE:
-======
+-------
 Simple add (or dynamically load) the drawwn.js development file, or the drawwn.min.js minified file into your page; along with the drawwn.css file.
 
 initialize the constructor with:
 
- var can = $('#yourElement').drawwn({
+`var drawwn = $('#yourElement').drawwn({
         "tools" : {  //add or remove tools
             "circle" : true,
             "arrow" : true,
@@ -29,9 +29,10 @@ initialize the constructor with:
         "height" : "700px", //height
         "width" : "1000px" //width
         });
-        
-        EXTRA:
-        ======
-       can.waitTillReady(function(o){ //use to wait until ready to load an image into drawwn
+        `
+EXTRA:
+------
+
+       `drawwn.waitTillReady(function(o){ //use to wait until ready to load an image into drawwn
           o.loadImage("/js/images/backFlips.png");
-        });
+        });`
