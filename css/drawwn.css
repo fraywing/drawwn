@@ -1,0 +1,175 @@
+@import url('../inc/colorpicker/css/colorpicker.css');
+@import url('../inc/slider/css/simple-slider.css');
+.drawwn_textbox{
+    position: absolute;
+}
+.drawwn{
+    display: inline-block;
+    box-shadow: 0 0 9px 0 rgba(2,2,2,0.5);
+    border: 1px solid rgba(255,255,255,0.8);
+    text-shadow: 0 0 5px rgba(255,255,255,0.4), 0 -1px 0 rgba(2,2,2,0.5);
+       background: rgba(2,2,2,0.6);
+       font-family: Arial;
+       overflow: hidden;
+       font-size:0px;
+       vertical-align: top;
+       border-radius: 4px;
+         -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+
+  /* No support for these yet, use at own risk */
+  -o-user-select: none;
+  user-select: none;     
+}
+.drawwn_other{
+    float: left;
+}
+.drawwn canvas{
+             -webkit-transition: all 0.9s ease;  /* Saf3.2+, Chrome */
+     -moz-transition: all 0.9s ease;  /* FF4+ */
+       -o-transition: all 0.9s ease;  /* Opera 10.5+ */
+          transition: all 0.9s ease;
+    display: block;
+}
+.drawwn_under{
+   position: relative;
+    display: block;
+    width:100%;
+   box-shadow: inset 0 3px 4px -2px rgba(255,255,255,0.25);
+   color:rgba(255,255,255,0.7);
+   height: 30px;
+   vertical-align: middle;
+    border-top:  1px solid rgba(255,255,255,0.3);
+    padding-top: 3px;
+}
+.drawwn_textbox{
+    box-shadow: 0 0 7px 0 rgba(2,2,2,0.4);
+    background: rgba(199,199,199,1);
+    padding: 6px;
+    border-radius: 5px;
+}
+.drawwn_textbox input{
+    box-shadow: inset 0 1px 1px 0 rgba(2,2,2,0.3);
+    padding: 3px;
+    border: 1px solid gray;
+    border-radius: 6px;
+}
+.drawwn_textbox button{
+      -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+
+  /* No support for these yet, use at own risk */
+  -o-user-select: none;
+  user-select: none;     
+             -webkit-transition: all 0.2s ease;  /* Saf3.2+, Chrome */
+     -moz-transition: all 0.2s ease;  /* FF4+ */
+       -o-transition: all 0.2s ease;  /* Opera 10.5+ */
+          transition: all 0.2s ease;
+     display: inline-block;
+    margin : 2px;
+    padding: 3px;
+    color: white;
+    vertical-align: sub;
+    padding-right: 5px;
+    padding-left: 5px;
+    background: rgba(122,122,122,0.5);
+    cursor:pointer;
+    box-shadow: inset 0 2px 4px -2px rgba(255,255,255,0.4);
+    border: 1px solid rgba(2,2,2,0.1);
+    border-top:  1px solid rgba(255,255,255,0.7);
+    } 
+.drawwn_other div, .tools_drawwn div{
+      -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+
+  /* No support for these yet, use at own risk */
+  -o-user-select: none;
+  user-select: none;     
+             -webkit-transition: all 0.2s ease;  /* Saf3.2+, Chrome */
+     -moz-transition: all 0.2s ease;  /* FF4+ */
+       -o-transition: all 0.2s ease;  /* Opera 10.5+ */
+          transition: all 0.2s ease;
+    display: inline-block;
+    margin : 2px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 3px;
+    vertical-align: middle;
+    padding-right: 5px;
+    padding-left: 5px;
+    background: rgba(122,122,122,0.5);
+    cursor:pointer;
+    box-shadow: inset 0 2px 4px -2px rgba(255,255,255,0.4);
+    border: 1px solid rgba(2,2,2,0.2);
+    border-top:  1px solid rgba(255,255,255,0.3);
+    font-size: 17px;
+}
+.drawwn_other div:hover, .tools_drawwn div:hover{
+     text-shadow: 0 0 12px rgba(255,255,255,0.4);
+      box-shadow:  0 0 7px 0 rgba(2,2,2,0.1);
+     background: rgba(122,122,122,0.9);
+}
+.drawwn_other div:active{
+     box-shadow: inset 0 2px 4px -2px rgba(2,2,2,0.5);
+        background: #1587ac;
+          border: 1px solid rgba(2,2,2,0.3);
+          border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+.drawwn_toolset{
+    float: right;
+}
+.tools_drawwn .drawwn_select{
+        box-shadow: inset 0 2px 4px -2px rgba(2,2,2,0.5) !important;
+        background: #1587ac !important;
+          border: 1px solid rgba(2,2,2,0.3) !important;
+          text-shadow: 0 0 5px rgba(255,255,255,0.4), 0 -1px 0 rgba(2,2,2,0.5) !important;
+          border-bottom: 1px solid rgba(255,255,255,0.3) !important;
+}
+.drawwn_settings{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 36px;
+    vertical-align: middle;
+}
+.drawwn_colorpicker{
+   background: url("../inc/colorpicker/images/select2.png") repeat scroll 0 0 transparent;
+   height:35px;
+    left: 0;
+    display: block;
+    float: right;
+    position: relative;
+    
+    width: 36px;
+   border: 2px solid #757575;
+   border-radius: 7px;
+}
+
+.drawwn_slider{
+    display: block;
+   float: right;
+    position: relative;
+    height: 100%;
+    right :0px;
+    vertical-align: bottom;
+     width:350px;
+}
+.drawwn_slider span{
+    display: inline-block;
+    width:40px;
+  position: relative;
+  top: -5px;
+  float:right;
+  text-align: center;
+  font-size: 14px;
+  font-weight: normal;
+    height: 50px;
+    color: rgba(12,174,244,1);
+    text-shadow: 0 1px 0 rgba(172,225,255,0.9);
+}
+.drawwn_slider .slider{
+    top:10px;
+}

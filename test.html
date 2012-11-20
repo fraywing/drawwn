@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="css/drawwn.css">
+            <script src="js/drawwn.js" type="text/javascript"></script>
+        </head>
+        <body>
+            <div id="drawwn"></div>
+            
+        </body>
+            <script>
+       var can = $('#drawwn').drawwn({
+        "tools" : {
+            "circle" : true,
+            "arrow" : true,
+            "line" : true,
+            "text" : true,
+            "magnify" : false,
+            "freehand" : false,
+            "selector" : true
+        },
+        "zoom" : true,
+        "colors" : true,
+        "loadImage" : true,
+        "exportImage" : function(image){ //callback when image is sent back to us
+           var img = "<img src='"+image+"' />";
+            $('body').append(img);
+        },
+        "background" : "#d3d3d3",
+        "height" : "700px",
+        "width" : "1000px"
+        });
+       can.waitTillReady(function(o){ //returns all the goodies
+          o.loadImage("/js/images/backFlips.png");
+        });
+    </script>
+    </html>
