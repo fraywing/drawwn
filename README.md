@@ -3,13 +3,14 @@ drawwn
 (draw so easy, you'll yawn)
 
 Import images, draw and modify shapes, arrows, lines and export your final image with drawwn.
-The object-based javascript canvas editing/image import & export tool.
+The jQuery javascript canvas editing/image import & export tool.
 
 *compatible w/IE9, FF10+, Chrome9+*
 
 TO USE:
 -------
 Simple add (or dynamically load) the drawwn.js development file, or the drawwn.min.js minified file into your page; along with the drawwn.css file.
+Load jQuery.
 
 *initialize the constructor with:*
 
