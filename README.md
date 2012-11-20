@@ -10,7 +10,7 @@ Simple add (or dynamically load) the drawwn.js development file, or the drawwn.m
 
 initialize the constructor with:
 
-`var drawwn = $('#yourElement').drawwn({
+        var drawwn = $('#yourElement').drawwn({
         "tools" : {  //add or remove tools
             "circle" : true,
             "arrow" : true,
@@ -29,10 +29,10 @@ initialize the constructor with:
         "height" : "700px", //height
         "width" : "1000px" //width
         });
-        `
+        
 EXTRA:
 ------
 
-       `drawwn.waitTillReady(function(o){ //use to wait until ready to load an image into drawwn
+       drawwn.waitTillReady(function(o){ //use to wait until ready to load an image into drawwn
           o.loadImage("/js/images/backFlips.png");
-        });`
+        });
