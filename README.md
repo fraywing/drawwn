@@ -1,13 +1,11 @@
 drawwn
-(draw so easy, you'll yawn)
-
-by Fraywing
 ======
+(draw so easy, you'll yawn)
 
 Super easy javascript canvas drawing UI and tool with build with oCanvas, color picker, and easy slider.
 
 TO USE:
-
+======
 Simple add (or dynamically load) the drawwn.js development file, or the drawwn.min.js minified file into your page; along with the drawwn.css file.
 
 initialize the constructor with:
@@ -33,7 +31,7 @@ initialize the constructor with:
         });
         
         EXTRA:
-        
+        ======
        can.waitTillReady(function(o){ //use to wait until ready to load an image into drawwn
           o.loadImage("/js/images/backFlips.png");
         });
