@@ -1,7 +1,14 @@
 /*
  *Copyright 2012 Dyologic LLC.
  *Author: Austin Anderson
- */ (function ($) {
+ *Use under MIT license
+ *
+ *uses oCanvas by koggdal : https://github.com/koggdal/ocanvas,
+ color picker by eyecon :  http://www.eyecon.ro/colorpicker/,
+ and simple slider by loopj: https://github.com/loopj/jquery-simple-slider
+ */
+
+(function ($) {
     var methods = {
         loaded: false,
         global: null,
