@@ -2,13 +2,16 @@ drawwn
 ======
 (draw so easy, you'll yawn)
 
-Super easy javascript canvas drawing UI and tool with build with oCanvas, color picker, and easy slider.
+Import images, draw and modify shapes, arrows, lines and export your final image with drawwn.
+The object-based javascript canvas editing/image import & export tool.
+
+*compatible w/IE9, FF10+, Chrome9+*
 
 TO USE:
 -------
 Simple add (or dynamically load) the drawwn.js development file, or the drawwn.min.js minified file into your page; along with the drawwn.css file.
 
-initialize the constructor with:
+*initialize the constructor with:*
 
         var drawwn = $('#yourElement').drawwn({
         "tools" : {  //add or remove tools
@@ -32,6 +35,7 @@ initialize the constructor with:
         
 EXTRA:
 ------
+*load your image with:*
 
        drawwn.waitTillReady(function(o){ //use to wait until ready to load an image into drawwn
           o.loadImage("/js/images/backFlips.png");
